@@ -41,5 +41,25 @@ module.exports = {
                 });
             }
         });
+    },
+    addUserUnique : function(user,res){
+        MongoClient.connect(url,function(err,db){
+            if(err){
+                console.log(err);
+            }
+            else{
+                var userCollection = db.collection('user');
+                userCollection.insert(user,function(err,resp){
+                    if(err){
+                        console.log(err);
+                    }
+                    else{
+                        console.log(res.insertedCount.toString() + ' User Inserted');
+                        res.json(user);
+                    }
+                    db.close();
+                });
+            }
+        });
     }
 }

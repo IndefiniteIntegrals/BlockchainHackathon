@@ -8,7 +8,9 @@ const blockchain = require('../models/car');
 
 router.get('/mine',function(req,res){
     if(req.query.sender && req.query.reciever && req.query.carID){
+
         console.log('Mining Block');
+
         var transaction = new Block(
                 blockchain.getLatestBlock().index + 1,
                 (new Date).toString(),
