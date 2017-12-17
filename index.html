@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fetcher</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<style type="text/css">
+		tr{
+			margin-left:20px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="card text-center">
+	  <div class="card-header">
+	    Transactions
+	  </div>
+	  <br>
+	  <div class="card-block">
+	    <h4 class="card-title">Transaction History</h4>
+	    <p class="card-text">
+	    	<div id="app">
+	    		<a href="javascript:void(0)" class="link" onclick="load()">{{ status }}</a>
+	    		<pre>{{ carID }}</pre>
+	        </div>
+	    </p>
+	    <a href="#" class="btn btn-primary">Details of Transaction</a>
+	  </div>
+	  <br>
+	  <div class="card-footer text-muted">
+	    2 days ago
+	  </div>
+    </div>
+	<script>
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				status:''
+			},
+			created: function () {
+				this.loadQuote();
+			},
+			methods: {
+				loadQuote: function () {
+					this.status = 'Loading...';
+					var vm =this;
+					axios.get('http://localhost:7200/api/vue/block')
+					.then(function (response){
+						console.log(response)
+						vm.hashID = response.data.hash;
+						vm.status = response.data.hash;
+						vm.carID = response.data.data.carID;
+					})
+					.catch(function (error) {
+						vm.status = 'An error occured.'+error;
+					});
+				}
+			}
+		});
+	</script>
+</body>
+</html>
