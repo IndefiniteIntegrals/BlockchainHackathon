@@ -4,10 +4,13 @@ const app = express();
 const Block = require('./models/block');
 const blockchain = require('./models/car');
 const routes = require('./routes');
+const bodyParser = require('body-parser');
 
 const database = require('./models/mongo');
 
 const PORT = 7200;
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', null);

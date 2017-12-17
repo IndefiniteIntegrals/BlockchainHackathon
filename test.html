@@ -9,12 +9,22 @@
     <label>carID</label><input type="text" name="" id="carID">
     <button onclick="sell()">Submit for /api/v1/sell</button>
 </form>
+<br><br><br>
 <form id="form2" action="http://localhost:7200/api/v1/transaction/mine" method="post">
     <label>sender</label><input type="text" id="sender">
     <label>reciever</label><input type="text" id="reciever">
     <label>carID</label><input type="text" id="carID2">
     <button onclick="buy()">Submit for /api/v1/transaction/mine</button>
 </form>
+<br><br><br>
+<form id="form3" action="http://localhost:7200/api/vue/user" method="post">
+    <label>name</label><input type="text" name="name" id="name">
+    <label>aadhar</label><input type="text" name="aadhar" id="aadhar">
+    <label>pan</label><input type="text" name="pan" id="pan">
+    <label>address</label><input type="text" name="address" id="address">
+    <input type="submit" name="">
+<!--     <button onclick="user()">Submit for /api/vue/user</button>
+ --></form>
 </body>
 <script type="text/javascript">
     function sell(){
@@ -24,6 +34,9 @@
     function buy(){
         document.getElementById('form2').action = "http://localhost:7200/api/v1/transaction/mine?sender=" + document.getElementById('sender').value + "&reciever=" + document.getElementById('reciever').value + "&carID=" + document.getElementById('carID2').value;
         document.getElementById('form2').submit();
+    }
+    function user(){
+        document.getElementById('form3').submit();
     }
 </script>
 </html>
