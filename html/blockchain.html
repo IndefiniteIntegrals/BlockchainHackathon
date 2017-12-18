@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fetcher</title>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<style>
+		.container{
+			 background-color: #ffffff;
+			 border: 1px solid black;
+			 opacity: 0.9;
+			 filter: alpha(opacity=60); /* For IE8 and earlier */
+		}
+	</style>
+</head>
+<h2 align="center">Transactions History</h2>
+<body background="blockchain.png">
+<div class="container">
+	<div class="card text-center">
+	  <div class="card-header">
+	    Transactions
+	  </div>
+	  <br>
+	  <div class="card-block">
+	    <h4 class="card-title">Blockchain Details</h4>
+	    <p class="card-text">
+	    	<div id="app" class="text-left">
+		        <pre>{{ status }}</pre>
+	        </div>
+	    </p>
+
+    </div>
+</div>
+<div class="modal fade" id="largeShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<h4 class="modal-title" id="modalLabelLarge">Large Shoes</h4>
+</div>
+
+<div class="modal-body">
+Large shoes are usually avoided by people with small feet.
+</div>
+
+</div>
+</div>
+</div>
+	<script>
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				status:''
+			},
+			created: function () {
+				this.loadQuote();
+			},
+			methods: {
+				loadQuote: function () {
+					this.status = 'Loading...';
+					var vm =this;
+					axios.get('http://192.168.0.23:7200/api/v1/chain')
+					.then(function (response){
+						console.log(response)
+						vm.status = JSON.stringify(response.data,null,4);
+					})
+					.catch(function (error) {
+						vm.status = 'An error occured.'+error;
+					});
+				}
+			}
+		});
+	</script>
+</body>
+</html>
