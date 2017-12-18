@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20088A921DC77A2F0024D431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20088A911DC77A2F0024D431 /* AppDelegate.swift */; };
+		20088A941DC77A2F0024D431 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20088A931DC77A2F0024D431 /* ViewController.swift */; };
+		20088A971DC77A2F0024D431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20088A951DC77A2F0024D431 /* Main.storyboard */; };
+		20088A991DC77A2F0024D431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20088A981DC77A2F0024D431 /* Assets.xcassets */; };
+		20088A9C1DC77A2F0024D431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20088A9A1DC77A2F0024D431 /* LaunchScreen.storyboard */; };
+		20088AA51DC77A530024D431 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20088AA41DC77A530024D431 /* SpriteKit.framework */; };
+		20088AA71DC77AA90024D431 /* Bee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 20088AA61DC77AA90024D431 /* Bee.atlas */; };
+		20088AA91DC77CDB0024D431 /* BeeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20088AA81DC77CDB0024D431 /* BeeScene.swift */; };
+		40032A9D1FE70485002CC5B0 /* buy cars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40032A9C1FE70485002CC5B0 /* buy cars.jpg */; };
+		40032A9F1FE705BB002CC5B0 /* nissan_gt_r_white-wide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40032A9E1FE705BA002CC5B0 /* nissan_gt_r_white-wide.jpg */; };
+		40032AA11FE707E6002CC5B0 /* car-sale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40032AA01FE707E5002CC5B0 /* car-sale.jpg */; };
+		40032AA31FE709D3002CC5B0 /* d996e23249deac2795de659a48a01ddf_car-outline-logo-group-55-car-logo-clipart_538-240.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 40032AA21FE709D3002CC5B0 /* d996e23249deac2795de659a48a01ddf_car-outline-logo-group-55-car-logo-clipart_538-240.jpeg */; };
+		40032AA51FE70BF9002CC5B0 /* company name.png in Resources */ = {isa = PBXBuildFile; fileRef = 40032AA41FE70BF9002CC5B0 /* company name.png */; };
+		40032AA71FE71C93002CC5B0 /* best_time_to_sell_car-_car_repair_bill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40032AA61FE71C92002CC5B0 /* best_time_to_sell_car-_car_repair_bill.jpg */; };
+		40032AA91FE71CEF002CC5B0 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40032AA81FE71CEE002CC5B0 /* BuyViewController.swift */; };
+		40032AAB1FE71EAE002CC5B0 /* sellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40032AAA1FE71EAE002CC5B0 /* sellViewController.swift */; };
+		40032AAD1FE7347C002CC5B0 /* icons8-name-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 40032AAC1FE7347C002CC5B0 /* icons8-name-50.png */; };
+		40032AAF1FE735EC002CC5B0 /* icons8-secured-letter-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 40032AAE1FE735EB002CC5B0 /* icons8-secured-letter-50.png */; };
+		40032AB11FE73639002CC5B0 /* icons8-administrator-male-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 40032AB01FE73638002CC5B0 /* icons8-administrator-male-filled-50.png */; };
+		40032AB31FE73661002CC5B0 /* icons8-bus-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 40032AB21FE73661002CC5B0 /* icons8-bus-50.png */; };
+		40032AB51FE75246002CC5B0 /* fortuner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40032AB41FE75246002CC5B0 /* fortuner.jpg */; };
+		40032AB71FE7525F002CC5B0 /* cruze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40032AB61FE7525F002CC5B0 /* cruze.jpg */; };
+		40032AB91FE75286002CC5B0 /* audi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40032AB81FE75286002CC5B0 /* audi.jpg */; };
+		40032ABB1FE752A5002CC5B0 /* city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40032ABA1FE752A5002CC5B0 /* city.jpg */; };
+		40032ABD1FE75486002CC5B0 /* BuyviewcontrollerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40032ABC1FE75486002CC5B0 /* BuyviewcontrollerTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20088A8E1DC77A2F0024D431 /* SpriteKitUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20088A911DC77A2F0024D431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20088A931DC77A2F0024D431 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20088A961DC77A2F0024D431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20088A981DC77A2F0024D431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20088A9B1DC77A2F0024D431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20088A9D1DC77A2F0024D431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20088AA41DC77A530024D431 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		20088AA61DC77AA90024D431 /* Bee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Bee.atlas; sourceTree = "<group>"; };
+		20088AA81DC77CDB0024D431 /* BeeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeeScene.swift; sourceTree = "<group>"; };
+		40032A9C1FE70485002CC5B0 /* buy cars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "buy cars.jpg"; sourceTree = "<group>"; };
+		40032A9E1FE705BA002CC5B0 /* nissan_gt_r_white-wide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nissan_gt_r_white-wide.jpg"; sourceTree = "<group>"; };
+		40032AA01FE707E5002CC5B0 /* car-sale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "car-sale.jpg"; sourceTree = "<group>"; };
+		40032AA21FE709D3002CC5B0 /* d996e23249deac2795de659a48a01ddf_car-outline-logo-group-55-car-logo-clipart_538-240.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "d996e23249deac2795de659a48a01ddf_car-outline-logo-group-55-car-logo-clipart_538-240.jpeg"; sourceTree = "<group>"; };
+		40032AA41FE70BF9002CC5B0 /* company name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "company name.png"; sourceTree = "<group>"; };
+		40032AA61FE71C92002CC5B0 /* best_time_to_sell_car-_car_repair_bill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "best_time_to_sell_car-_car_repair_bill.jpg"; sourceTree = "<group>"; };
+		40032AA81FE71CEE002CC5B0 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		40032AAA1FE71EAE002CC5B0 /* sellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sellViewController.swift; sourceTree = "<group>"; };
+		40032AAC1FE7347C002CC5B0 /* icons8-name-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-name-50.png"; sourceTree = "<group>"; };
+		40032AAE1FE735EB002CC5B0 /* icons8-secured-letter-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-secured-letter-50.png"; sourceTree = "<group>"; };
+		40032AB01FE73638002CC5B0 /* icons8-administrator-male-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-administrator-male-filled-50.png"; sourceTree = "<group>"; };
+		40032AB21FE73661002CC5B0 /* icons8-bus-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-bus-50.png"; sourceTree = "<group>"; };
+		40032AB41FE75246002CC5B0 /* fortuner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fortuner.jpg; sourceTree = "<group>"; };
+		40032AB61FE7525F002CC5B0 /* cruze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cruze.jpg; sourceTree = "<group>"; };
+		40032AB81FE75286002CC5B0 /* audi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = audi.jpg; sourceTree = "<group>"; };
+		40032ABA1FE752A5002CC5B0 /* city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = city.jpg; sourceTree = "<group>"; };
+		40032ABC1FE75486002CC5B0 /* BuyviewcontrollerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyviewcontrollerTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20088A8B1DC77A2F0024D431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20088AA51DC77A530024D431 /* SpriteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20088A851DC77A2E0024D431 = {
+			isa = PBXGroup;
+			children = (
+				20088A901DC77A2F0024D431 /* SpriteKitUIKit */,
+				20088A8F1DC77A2F0024D431 /* Products */,
+				20088AA31DC77A530024D431 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20088A8F1DC77A2F0024D431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20088A8E1DC77A2F0024D431 /* SpriteKitUIKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20088A901DC77A2F0024D431 /* SpriteKitUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				20088A911DC77A2F0024D431 /* AppDelegate.swift */,
+				20088A931DC77A2F0024D431 /* ViewController.swift */,
+				40032AA81FE71CEE002CC5B0 /* BuyViewController.swift */,
+				20088AA81DC77CDB0024D431 /* BeeScene.swift */,
+				20088A951DC77A2F0024D431 /* Main.storyboard */,
+				40032ABC1FE75486002CC5B0 /* BuyviewcontrollerTableViewCell.swift */,
+				40032AAA1FE71EAE002CC5B0 /* sellViewController.swift */,
+				20088AA61DC77AA90024D431 /* Bee.atlas */,
+				20088A981DC77A2F0024D431 /* Assets.xcassets */,
+				20088A9A1DC77A2F0024D431 /* LaunchScreen.storyboard */,
+				40032A9C1FE70485002CC5B0 /* buy cars.jpg */,
+				40032A9E1FE705BA002CC5B0 /* nissan_gt_r_white-wide.jpg */,
+				40032AA21FE709D3002CC5B0 /* d996e23249deac2795de659a48a01ddf_car-outline-logo-group-55-car-logo-clipart_538-240.jpeg */,
+				40032AAE1FE735EB002CC5B0 /* icons8-secured-letter-50.png */,
+				40032AA41FE70BF9002CC5B0 /* company name.png */,
+				40032AAC1FE7347C002CC5B0 /* icons8-name-50.png */,
+				40032AB21FE73661002CC5B0 /* icons8-bus-50.png */,
+				40032AB01FE73638002CC5B0 /* icons8-administrator-male-filled-50.png */,
+				40032ABA1FE752A5002CC5B0 /* city.jpg */,
+				40032AA61FE71C92002CC5B0 /* best_time_to_sell_car-_car_repair_bill.jpg */,
+				40032AB81FE75286002CC5B0 /* audi.jpg */,
+				40032AA01FE707E5002CC5B0 /* car-sale.jpg */,
+				40032AB61FE7525F002CC5B0 /* cruze.jpg */,
+				40032AB41FE75246002CC5B0 /* fortuner.jpg */,
+				20088A9D1DC77A2F0024D431 /* Info.plist */,
+			);
+			path = SpriteKitUIKit;
+			sourceTree = "<group>";
+		};
+		20088AA31DC77A530024D431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20088AA41DC77A530024D431 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20088A8D1DC77A2F0024D431 /* SpriteKitUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20088AA01DC77A2F0024D431 /* Build configuration list for PBXNativeTarget "SpriteKitUIKit" */;
+			buildPhases = (
+				20088A8A1DC77A2F0024D431 /* Sources */,
+				20088A8B1DC77A2F0024D431 /* Frameworks */,
+				20088A8C1DC77A2F0024D431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpriteKitUIKit;
+			productName = SpriteKitUIKit;
+			productReference = 20088A8E1DC77A2F0024D431 /* SpriteKitUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20088A861DC77A2E0024D431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Rickey Hrabowskie";
+				TargetAttributes = {
+					20088A8D1DC77A2F0024D431 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = CUN9NH7N2T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 20088A891DC77A2E0024D431 /* Build configuration list for PBXProject "SpriteKitUIKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20088A851DC77A2E0024D431;
+			productRefGroup = 20088A8F1DC77A2F0024D431 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20088A8D1DC77A2F0024D431 /* SpriteKitUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20088A8C1DC77A2F0024D431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40032ABB1FE752A5002CC5B0 /* city.jpg in Resources */,
+				40032AA11FE707E6002CC5B0 /* car-sale.jpg in Resources */,
+				40032AAD1FE7347C002CC5B0 /* icons8-name-50.png in Resources */,
+				40032AAF1FE735EC002CC5B0 /* icons8-secured-letter-50.png in Resources */,
+				40032AB31FE73661002CC5B0 /* icons8-bus-50.png in Resources */,
+				40032AA71FE71C93002CC5B0 /* best_time_to_sell_car-_car_repair_bill.jpg in Resources */,
+				40032A9F1FE705BB002CC5B0 /* nissan_gt_r_white-wide.jpg in Resources */,
+				40032AB11FE73639002CC5B0 /* icons8-administrator-male-filled-50.png in Resources */,
+				20088AA71DC77AA90024D431 /* Bee.atlas in Resources */,
+				20088A9C1DC77A2F0024D431 /* LaunchScreen.storyboard in Resources */,
+				20088A991DC77A2F0024D431 /* Assets.xcassets in Resources */,
+				40032A9D1FE70485002CC5B0 /* buy cars.jpg in Resources */,
+				40032AA51FE70BF9002CC5B0 /* company name.png in Resources */,
+				40032AB71FE7525F002CC5B0 /* cruze.jpg in Resources */,
+				20088A971DC77A2F0024D431 /* Main.storyboard in Resources */,
+				40032AB51FE75246002CC5B0 /* fortuner.jpg in Resources */,
+				40032AB91FE75286002CC5B0 /* audi.jpg in Resources */,
+				40032AA31FE709D3002CC5B0 /* d996e23249deac2795de659a48a01ddf_car-outline-logo-group-55-car-logo-clipart_538-240.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20088A8A1DC77A2F0024D431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20088A941DC77A2F0024D431 /* ViewController.swift in Sources */,
+				40032AA91FE71CEF002CC5B0 /* BuyViewController.swift in Sources */,
+				20088A921DC77A2F0024D431 /* AppDelegate.swift in Sources */,
+				40032ABD1FE75486002CC5B0 /* BuyviewcontrollerTableViewCell.swift in Sources */,
+				20088AA91DC77CDB0024D431 /* BeeScene.swift in Sources */,
+				40032AAB1FE71EAE002CC5B0 /* sellViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20088A951DC77A2F0024D431 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20088A961DC77A2F0024D431 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20088A9A1DC77A2F0024D431 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20088A9B1DC77A2F0024D431 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20088A9E1DC77A2F0024D431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20088A9F1DC77A2F0024D431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20088AA11DC77A2F0024D431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CUN9NH7N2T;
+				INFOPLIST_FILE = SpriteKitUIKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rickeyHrabowskie.SpriteKitUIKi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		20088AA21DC77A2F0024D431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CUN9NH7N2T;
+				INFOPLIST_FILE = SpriteKitUIKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rickeyHrabowskie.SpriteKitUIKi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20088A891DC77A2E0024D431 /* Build configuration list for PBXProject "SpriteKitUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20088A9E1DC77A2F0024D431 /* Debug */,
+				20088A9F1DC77A2F0024D431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20088AA01DC77A2F0024D431 /* Build configuration list for PBXNativeTarget "SpriteKitUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20088AA11DC77A2F0024D431 /* Debug */,
+				20088AA21DC77A2F0024D431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20088A861DC77A2E0024D431 /* Project object */;
+}

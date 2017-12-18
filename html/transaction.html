@@ -72,7 +72,7 @@ Large shoes are usually avoided by people with small feet.
 				loadQuote: function () {
 					this.status = 'Loading...';
 					var vm =this;
-					axios.get('http://192.168.0.23:7200/api/vue/block')
+					axios.get('http://192.168.0.10:7200/api/vue/block')
 					.then(function (response){
 						console.log(response)
 						vm.status = response.data.hash;
