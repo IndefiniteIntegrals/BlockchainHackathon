@@ -41,7 +41,7 @@ router.get('/show',function(req,res){
     res.json(blockchain);
 });
 
-router.post('/sell',function(req,res){
+router.get('/sell',function(req,res){
     console.log('Want to sell');
     var userObj = {
         uniqueID : req.query.uniqueID,

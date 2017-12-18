@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fetcher</title>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<style>
+		.container{
+			 background-color: #ffffff;
+			 border: 1px solid black;
+			 opacity: 0.9;
+			 filter: alpha(opacity=60); /* For IE8 and earlier */
+		}
+	</style>
+</head>
+<h2 align="center">Autonity Transaction Explorer</h2>
+<br>
+<body background="blockchain.png">
+<div class="container">
+	<div class="card text-center">
+	  <div class="card-header">
+	    Transactions
+	  </div>
+	  <br>
+	  <div class="card-block">
+	    <h4 class="card-title">Transaction History</h4>
+	    <p class="card-text">
+	    	<div id="app">
+		        <p>{{ status }}</p>
+	        </div>
+	    </p>
+	    <a href="#" id="btn" onclick="getblock()" class="btn btn-primary">Details of Transaction</a>
+	  </div>
+	  <br>
+	  <div class="card-footer text-muted">
+	    Few Moments Ago
+	  </div>
+    </div>
+</div>
+	<script>
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				status:''
+			},
+			created: function () {
+				this.loadQuote();
+			},
+			methods: {
+				loadQuote: function () {
+					this.status = 'Loading...';
+					var vm =this;
+					axios.get('http://localhost:7200/api/vue/block')
+					.then(function (response){
+						console.log(response)
+						vm.status = response.data.hash;
+					})
+					.catch(function (error) {
+						vm.status = 'An error occured.'+error;
+					});
+				}
+			}
+		});
+
+		function getblock(){
+			var hash = document.getElementById('app').innerText;
+			var url = "http://localhost:7200/api/vue/getBlock?blockID=" + hash;
+			window.location.href = url;
+		}
+	</script>
+</body>
+</html>
